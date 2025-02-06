@@ -7,7 +7,7 @@ export interface ButtonProps {
     press: () => void;
 }
 
-export function SGX_AnimatedButton({ name, press }: ButtonProps) {
+export default function SGX_AnimatedButton({ name, press }: ButtonProps) {
     const scale = useRef(new Animated.Value(1)).current;
     const backgroundColor = useRef(new Animated.Value(0)).current; // 0: 默认, 1: 悬停, -1: 按下
 
