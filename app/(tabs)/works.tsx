@@ -1,6 +1,6 @@
 import { Linking, View } from "react-native";
-import { theme } from '../theme';
-import { SGX_AnimatedButton } from "../Button";
+import theme from '../theme';
+import SGX_AnimatedButton from "../Button";
 
 const games = [
     {

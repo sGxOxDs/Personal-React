@@ -1,8 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-
-
-export const theme = StyleSheet.create({
+const theme = StyleSheet.create({
     header: {
         backgroundColor: '#200040',
     },
@@ -32,3 +30,5 @@ export const theme = StyleSheet.create({
 
     },
 });
+
+export default theme;

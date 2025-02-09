@@ -1,7 +1,7 @@
 import { Linking, Text, View } from "react-native";
-import { theme } from '../theme';
+import theme from '../theme';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { SGX_AnimatedButton } from "../Button";
+import SGX_AnimatedButton from "../Button";
 
 
 export default function Index() {
