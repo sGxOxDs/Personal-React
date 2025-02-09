@@ -2,7 +2,6 @@
   "name": "personal-react",
   "main": "expo-router/entry",
   "version": "1.0.0",
-  "homepage": "https://sgxoxds.github.io/Personal-React",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
