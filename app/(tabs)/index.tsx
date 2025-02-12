@@ -31,7 +31,7 @@ export default function Index() {
         name={
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Ionicons name={'logo-youtube'} color={"#fff"} size={24} />
-            <Text style={theme.text}> Twitch</Text>
+            <Text style={theme.text}> Youtube</Text>
           </View>
         }
         press={() => Linking.openURL('https://www.youtube.com/@sGxOxDs')}
