@@ -1,5 +1,17 @@
 import { StyleSheet } from 'react-native';
 
+export function generateTitleFromPath(path: string) {
+    // 根據路徑回傳對應的標題
+    switch (path) {
+      case '/':
+        return '關於聖鳶 - 聖鳶の遊戲';
+      case '/works':
+        return '小遊戲 - 聖鳶の遊戲';
+      default:
+        return '聖鳶の遊戲';
+    }
+  }
+
 const theme = StyleSheet.create({
     header: {
         backgroundColor: '#200040',

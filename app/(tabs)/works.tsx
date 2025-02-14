@@ -1,7 +1,8 @@
 import { Linking, View } from "react-native";
-import theme from '../theme';
+import theme, { generateTitleFromPath } from '../theme';
 import SGX_AnimatedButton from "../Button";
-import { Helmet } from "react-helmet-async";
+import Head from 'expo-router/head';
+import { usePathname } from "expo-router";
 
 const games = [
     {
@@ -31,6 +32,7 @@ const games = [
 ];
 
 export default function Works() {
+    const pathname = usePathname();
     let gameList = games.map((game, index) => {
         return (
             <SGX_AnimatedButton
@@ -45,13 +47,13 @@ export default function Works() {
         <View
             style={theme.container}
         >
-            <Helmet>
+            <Head>
                 <html lang="zh-TW" />
-                <title>聖鳶の遊戲 - 各種小遊戲</title>
+                <title>{generateTitleFromPath(pathname)}</title>
                 <meta name="keywords" content="聖鳶, 聖鳶の遊戲, sGxOxDs, St.Eagle, 諾米, 諾諾莎, Nomi, Nonosa" />
                 <meta name="description" content="聖鳶用來藏各種小遊戲的地方" />
                 <meta name="author" content="sGxOxDs" />
-            </Helmet>
+            </Head>
             {gameList}
         </View>
     );
