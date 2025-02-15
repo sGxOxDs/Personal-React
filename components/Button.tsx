@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Animated, Pressable, Text } from "react-native";
-import theme from "./theme";
+import theme from "@/components/Theme";
 
 export interface ButtonProps {
     name: React.ReactNode;

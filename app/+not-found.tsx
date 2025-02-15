@@ -1,7 +1,7 @@
 import { View } from 'react-native';
 import { useRouter } from 'expo-router';
-import theme from './theme';
-import SGX_AnimatedButton from './Button';
+import theme from '@/components/Theme';
+import SGX_AnimatedButton from '@/components/Button';
 
 export default function NotFoundScreen() {
     const router = useRouter();

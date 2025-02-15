@@ -1,6 +1,6 @@
 import { Linking, View } from "react-native";
-import theme, { generateTitleFromPath } from '../theme';
-import SGX_AnimatedButton from "../Button";
+import theme, { generateTitleFromPath } from '@/components/Theme';
+import SGX_AnimatedButton from "@/components/Button";
 import Head from 'expo-router/head';
 import { usePathname } from "expo-router";
 

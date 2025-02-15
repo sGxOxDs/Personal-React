@@ -1,10 +1,14 @@
 import { Tabs } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import theme, { generateTitleFromPath } from '../theme';
+import theme, { generateTitleFromPath } from '@/components/Theme';
+import { GoogleAdsense } from '@/components/GoogleAdsense.web';
+
 
 export default function TabLayout() {
     return (
+        <>
+        <GoogleAdsense />
         <Tabs
             screenOptions={{
                 tabBarActiveTintColor: '#ffd33d',
@@ -13,6 +17,7 @@ export default function TabLayout() {
                 headerTintColor: '#fff',
                 tabBarStyle: theme.tabBar,
             }}>
+            
             <Tabs.Screen name="index" options={{
                 title: generateTitleFromPath('/'),
                 tabBarLabel: '關於聖鳶',
@@ -28,5 +33,6 @@ export default function TabLayout() {
                 ),
             }} />
         </Tabs>
+        </>
     );
 }
